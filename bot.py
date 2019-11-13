@@ -9,8 +9,8 @@ async def on_ready():
   print('Bot is ready.')
   
 #an example of a command would be
-#@client.command()
-#async def hello(ctx):
-#   await ctx.send(f'Hello {ctx.author}')
+@client.command()
+async def hello(ctx):
+   await ctx.send(f'Hello {ctx.author}')
 
 client.run(os.getenv(TOKEN)
